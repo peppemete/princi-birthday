@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>AUGURI PRINCI</title>
+</head>
+<body>
+    <h1>TANTI AUGURI PRINCI</h1>
+    <button onclick="michysong()">Clicca qua</button>
+    <img id="michy" src="michy-3.png" alt="">
+    <audio id="song" src="Happy.mp3"></audio>
+    <style>
+        body{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            background-color: pink;
+        }
+        h1 {
+            text-align: center;
+            font-family: sans-serif;
+            color: white;
+        }
+
+        #michy {
+            margin: auto;
+            max-width: 100vw;
+        }
+
+    </style>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.3.3/gsap.min.js"></script>
+    <script>
+        var michy =document.querySelector("#michy");
+        var song =document.querySelector("#song");
+       
+        function michysong() {
+            song.play()
+
+            var tl=gsap.timeline();
+            tl.set(michy,{attr:{src:"michy-4.png"}, duration:1},0)
+            tl.set(michy,{attr:{src:"michy-3.png"}, duration:1},1)
+            tl.set(michy,{attr:{src:"michy-4.png"}, duration:1},2)
+            tl.set(michy,{attr:{src:"michy-3.png"}, duration:1},3)
+            tl.set(michy,{attr:{src:"michy-4.png"}, duration:1},4)
+            tl.set(michy,{attr:{src:"michy-3.png"}, duration:1},5)
+            tl.set(michy,{attr:{src:"michy-4.png"}, duration:1},6)
+            tl.set(michy,{attr:{src:"michy-3.png"}, duration:1},7)
+            tl.set(michy,{attr:{src:"michy-4.png"}, duration:1},6)
+            tl.set(michy,{attr:{src:"michy-3.png"}, duration:1},7)
+            tl.set(michy,{attr:{src:"michy-4.png"}, duration:1},8)
+            tl.set(michy,{attr:{src:"michy-3.png"}, duration:1},9)
+            tl.set(michy,{attr:{src:"michy-4.png"}, duration:1},10)
+            tl.set(michy,{attr:{src:"michy-3.png"}, duration:1},11)
+            tl.set(michy,{attr:{src:"michy-4.png"}, duration:1},12)
+            tl.set(michy,{attr:{src:"michy-3.png"}, duration:1},13)
+
+        }
+        
+        
+        
+    </script>
+</body>
+</html>
